@@ -3,6 +3,7 @@ package com.example.tsvetomirtonchev.wiki.data.di.rest;
 import android.content.Context;
 
 import com.example.tsvetomirtonchev.wiki.App;
+import com.example.tsvetomirtonchev.wiki.data.di.rest.response.WikiResponse;
 
 import java.io.IOException;
 
@@ -25,7 +26,7 @@ public class RestServices {
         App.getAppComponent().inject(this);
     }
 
-    public void getWikiData(String pageName, Callback<ResponseBody> callback) {
+    public void getWikiData(String pageName, Callback<WikiResponse> callback) {
         executeAsync(restServicesApi.getWikiData(pageName), callback);
     }
 

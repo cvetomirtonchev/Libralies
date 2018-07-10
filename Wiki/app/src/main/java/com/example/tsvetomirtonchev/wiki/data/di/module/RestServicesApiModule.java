@@ -36,6 +36,7 @@ public class RestServicesApiModule {
     public static RestServicesApi providesApiService(OkHttpClient okHttpClient) {
         Gson gson = new GsonBuilder()
                 .setDateFormat(REST_DATE_FORMAT)
+                .setLenient()
                 .create();
 
         Retrofit retrofit = new Retrofit.Builder()
