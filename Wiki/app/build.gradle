@@ -29,6 +29,9 @@ dependencies {
     //Gson
     implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
 
+    //jsoup
+    implementation "org.jsoup:jsoup:$rootProject.jsoup"
+
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
@@ -36,6 +39,5 @@ dependencies {
 
     //Dagger
     implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
 }

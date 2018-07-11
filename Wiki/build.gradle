@@ -43,4 +43,5 @@ ext {
     junitVersion = '4.12'
     espressoVersion = '3.0.1'
     mockitoVersion = '2.10.0'
+    jsoup = '1.10.2'
 }

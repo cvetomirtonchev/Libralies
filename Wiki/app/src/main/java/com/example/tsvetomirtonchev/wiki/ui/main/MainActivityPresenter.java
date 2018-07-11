@@ -1,7 +1,7 @@
 package com.example.tsvetomirtonchev.wiki.ui.main;
 
-import com.example.tsvetomirtonchev.wiki.data.di.repository.WikiRepository;
-import com.example.tsvetomirtonchev.wiki.data.di.rest.response.WikiResponse;
+import com.example.tsvetomirtonchev.wiki.data.repository.WikiRepository;
+import com.example.tsvetomirtonchev.wiki.data.rest.response.WikiResponse;
 import com.example.tsvetomirtonchev.wiki.ui.base.mvp.BasePresenter;
 
 public class MainActivityPresenter extends BasePresenter implements MainActivityContract.Presenter {
@@ -23,7 +23,7 @@ public class MainActivityPresenter extends BasePresenter implements MainActivity
         }
         switch (dataType) {
             case 1:
-                ((MainActivityContract.View) mView).showWikiInfo((WikiResponse) data);
+                ((MainActivityContract.View) mView).showWikiInfo(data.toString());
         }
 
     }

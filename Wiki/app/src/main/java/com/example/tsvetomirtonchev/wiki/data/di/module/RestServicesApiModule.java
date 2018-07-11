@@ -4,8 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import com.example.tsvetomirtonchev.wiki.BuildConfig;
-import com.example.tsvetomirtonchev.wiki.data.di.rest.RestServices;
-import com.example.tsvetomirtonchev.wiki.data.di.rest.RestServicesApi;
+import com.example.tsvetomirtonchev.wiki.data.rest.RestServices;
+import com.example.tsvetomirtonchev.wiki.data.rest.RestServicesApi;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

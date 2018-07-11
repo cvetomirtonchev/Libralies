@@ -1,18 +1,15 @@
-package com.example.tsvetomirtonchev.wiki.data.di.rest;
+package com.example.tsvetomirtonchev.wiki.data.rest;
 
 import android.content.Context;
 
 import com.example.tsvetomirtonchev.wiki.App;
-import com.example.tsvetomirtonchev.wiki.data.di.rest.response.WikiResponse;
-
-import java.io.IOException;
+import com.example.tsvetomirtonchev.wiki.data.rest.response.WikiResponse;
 
 import javax.inject.Inject;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.Response;
 
 public class RestServices {
 
@@ -26,7 +23,7 @@ public class RestServices {
         App.getAppComponent().inject(this);
     }
 
-    public void getWikiData(String pageName, Callback<WikiResponse> callback) {
+    public void getWikiData(String pageName, Callback<ResponseBody> callback) {
         executeAsync(restServicesApi.getWikiData(pageName), callback);
     }
 
