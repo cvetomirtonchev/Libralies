@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomKeyValueView">
+        <attr name="style" />
+        <attr name="key_text_size" format="dimension" />
+        <attr name="value_text_size" format="dimension" />
+        <attr name="text_config_tag" />
+    </declare-styleable>
+</resources>
